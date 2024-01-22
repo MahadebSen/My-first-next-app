@@ -1,9 +1,13 @@
-const NewsHomePage = () => {
-  return (
-    <div>
-      <h1>This is news Home Page</h1>
-    </div>
-  );
-};
+import React from "react";
+import { Button } from "antd";
+import Link from "next/link";
 
-export default NewsHomePage;
+const Home = () => (
+  <div className="App">
+    <Button type="primary">
+      <Link href="/">Home</Link>
+    </Button>
+  </div>
+);
+
+export default Home;
